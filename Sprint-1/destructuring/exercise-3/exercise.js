@@ -14,9 +14,7 @@ function printReceipt(order) {
 
   for (let i = 0; i < order.length; i++) {
     const item = order[i];
-    const itemName = item.itemName;
-    const quantity = item.quantity;
-    const unitPricePence = item.unitPricePence;
+    const { itemName, quantity, unitPricePence } = item;
 
     const itemTotal = quantity * unitPricePence;
     total += itemTotal;
