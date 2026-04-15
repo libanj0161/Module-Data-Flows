@@ -102,3 +102,6 @@ function findTeachersWithPets(peopleList) {
   console.log("Teachers with pets", output);
   return output;
 }
+
+findTeachersWithPets(hogwarts);
+findGryffindor(hogwarts);
