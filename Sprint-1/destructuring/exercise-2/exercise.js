@@ -83,7 +83,8 @@ function findGryffindor(peopleList) {
   });
 
   const output = peopleNames.join("\n");
-  console.log("People in Gryffindor House", output);
+  console.log("People in Gryffindor House:");
+  console.log(output);
   return output;
 }
 
