@@ -1,4 +1,9 @@
-let myLibrary = [];
+const myLibrary = [];
+
+const titleEl = document.getElementById("title");
+const authorEl = document.getElementById("author");
+const pagesEl = document.getElementById("pages");
+const checkEl = document.getElementById("check");
 
 window.addEventListener("load", function (e) {
   populateStorage();
@@ -18,11 +23,6 @@ function populateStorage() {
     myLibrary.push(book2);
   }
 }
-
-const titleEl = document.getElementById("title");
-const authorEl = document.getElementById("author");
-const pagesEl = document.getElementById("pages");
-const checkEl = document.getElementById("check");
 
 function submit() {
   const titleVal = titleEl.value.trim();
