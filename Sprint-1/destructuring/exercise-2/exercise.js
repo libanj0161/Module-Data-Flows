@@ -70,39 +70,3 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
-
-function findGryffindor(peopleList) {
-  // first loop through the people list
-  // find every person whos is Gryffindor house
-  const gryffindorPeople = peopleList.filter(({ house }) => {
-    return house === "Gryffindor";
-  });
-
-  const peopleNames = gryffindorPeople.map(({ firstName, lastName }) => {
-    return `${firstName} ${lastName}`;
-  });
-
-  const output = peopleNames.join("\n");
-  console.log("People in Gryffindor House:");
-  console.log(output);
-  return output;
-}
-
-function findTeachersWithPets(peopleList) {
-  // loop through peoples list
-  // find teachers with pets
-  const teachersWithPets = peopleList.filter(({ occupation, pet }) => {
-    return pet && occupation === "Teacher";
-  });
-
-  const teachersName = teachersWithPets.map(({ firstName, lastName }) => {
-    return `${firstName} ${lastName}`;
-  });
-
-  const output = teachersName.join("\n");
-  console.log("Teachers with pets", output);
-  return output;
-}
-
-findTeachersWithPets(hogwarts);
-findGryffindor(hogwarts);
